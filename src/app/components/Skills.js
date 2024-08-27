@@ -50,7 +50,7 @@ export default function App() {
 
     return (
         <>
-            <h1 className="text-4xl text-purple-200 font-bold text-center mb-12">Skills</h1>
+            <h1 className="md:text-4xl text-2xl text-purple-200 font-bold text-center mb-12">Skills</h1>
             {/* <Banner images={images} speed={25000} /> */}
             <InfiniteMovingCards items={images} speed="" />
             <div className='w-full h-px bg-purple-200 my-10'></div>

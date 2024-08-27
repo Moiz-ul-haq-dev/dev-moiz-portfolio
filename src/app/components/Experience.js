@@ -79,12 +79,12 @@ export default function Experience() {
     <>
       <div
         id="testimonial"
-        className="container max-w-screen-lg justify-center mx-auto px-10 md:px-0"
+        className="container max-w-screen-lg justify-center mx-auto px-5 md:px-0"
       >
         <div className="row mb-12">
           <div className="col">
             <div className="flex flex-col items-center container">
-              <h1 className="text-4xl text-purple-200 font-bold text-center">
+              <h1 className="md:text-4xl text-2xl text-purple-200 font-bold text-center">
                 Professional Experience
               </h1>
             </div>
@@ -95,9 +95,9 @@ export default function Experience() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="flex flex-col rounded-lg mb-6 p-3 border border-gray-300 bg-gradient-to-r from-purple-950 to-purple-800"
+                className="flex flex-col rounded-lg mb-6 md:p-3 p-2 border border-gray-300 bg-gradient-to-r from-purple-950 to-purple-800"
               >
-                <div className="text-gray-700 font-normal text-base">
+                <div className="text-gray-700 font-normal md:text-base text-sm">
                   <div
                     className="flex pb-2 cursor-pointer"
                     onClick={() => toggleAnswer(index)}

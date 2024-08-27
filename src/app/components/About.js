@@ -3,8 +3,8 @@ import React from 'react';
 export default function About() {
   return (
     <>
-      <div className="container mb-10 max-w-screen-lg mx-auto md:px-0 px-10">
-        <h1 className="text-4xl text-purple-200 font-bold text-center">About Me</h1>
+      <div className="container mb-10 max-w-screen-lg mx-auto md:px-0 px-5">
+        <h1 className="md:text-4xl text-2xl text-purple-200 font-bold text-center">About Me</h1>
         <p className="text-md text-justify mt-8  px-4 md:mx-auto w-full text-purple-200 max-w-screen-lg">
           As an undergraduate from UET Lahore with a degree in computer science, my expertise lies in full-stack website development—a skill set I have diligently cultivated over the past several years. Through freelancing, I have actively contributed to numerous projects, specializing in both MEAN (MongoDB, Express.js, AngularJS, Node.js) and MERN (MongoDB, Express.js, React, Node.js) stacks. Proficient in technologies such as AngularJS, React, Node.js, Express, and MongoDB, I possess a comprehensive understanding of how to leverage these tools to construct dynamic and engaging websites. My capabilities extend to both front-end and back-end development, allowing me to create responsive and interactive web applications.
         </p>

@@ -6,8 +6,8 @@ import { MX, US, RO, GB } from 'country-flag-icons/react/3x2';
 export default function Testimonials() {
     return (
         <>
-            <h1 className="text-4xl text-purple-200 font-bold text-center mt-10 mb-5">Testimonials</h1>
-            <div className="flex flex-col md:flex-row justify-between px-14 items-center">
+            <h1 className="md:text-4xl text-2xl text-purple-200 font-bold text-center mt-10 mb-5">Testimonials</h1>
+            <div className="flex flex-col md:flex-row justify-between md:px-14 px-7 items-center">
                 <HoverEffect
                     items={[
                         {

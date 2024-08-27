@@ -12,13 +12,13 @@ export default function Navbar() {
 
     return (
         <nav className="md:flex-row shadow-lg z-40 shadow-purple-800 items-center fixed justify-center w-full">
-            <div className="py-3 px-10 text-white bg-transparent backdrop-filter backdrop-blur-lg border-b md:border border-black border-opacity-10 w-full mx-auto">
+            <div className="py-3 md:px-10 px-5 text-white bg-transparent backdrop-filter backdrop-blur-lg border-b md:border border-black border-opacity-10 w-full mx-auto">
                 {/* Desktop Version */}
                 <div className="hidden md:flex items-center justify-between">
                     <Link href="/">
                         <div className="flex items-center space-x-2 cursor-pointer">
                             <Image src="/images/Profile.jpg" width={35} height={35} alt="logo" className="rounded-2xl" />
-                            <span className="font-bold text-xl">Moiz-ul-haq</span>
+                            <span className="font-bold md:text-xl">Moiz-ul-haq</span>
                         </div>
                     </Link>
 
@@ -48,11 +48,6 @@ export default function Navbar() {
                     </Link>
 
                     <div className="flex items-center">
-                        <form className="flex justify-center" target="_blank" method="get" action={"/images/resume/MoizulhaqResume.pdf"}>
-                            <button type="submit" className="bg-gradient-to-r from-purple-950 to-purple-800 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                                Download Resume
-                            </button>
-                        </form>
 
                         {/* Mobile Menu Button */}
                         <button
@@ -79,14 +74,23 @@ export default function Navbar() {
 
                 {/* Mobile Menu */}
                 {isMobileMenuOpen && (
-                    <div className="md:hidden mt-4">
-                        <div className="flex flex-col items-center font-bold space-y-5 text-md">
-                            <Link href="/" className="text-blue-800">Home</Link>
-                            <Link href="/projects" className="hover:text-blue-800">Projects</Link>
-                            <Link href="/blogs" className="hover:text-blue-800">Blogs</Link>
-                            <Link href="/contact" className="hover:text-blue-800">Contact</Link>
+                    <>
+                        <div className="md:hidden mt-4">
+                            <div className="flex flex-col items-center font-bold space-y-5 text-md">
+                                <a href="#home" className="text-purple-500">Home</a>
+                                <a href="#projects" className="hover:text-purple-500">Projects</a>
+                                <a href="#home" className="hover:text-purple-500">Blogs</a>
+                                <a href="#contact" className="hover:text-purple-500">Contact</a>
+                            </div>
                         </div>
-                    </div>
+                        <div className="flex items-center justify-center mt-3">
+                            <form className="flex justify-center" target="_blank" method="get" action={"/images/resume/MoizulhaqResume.pdf"}>
+                                <button type="submit" className="bg-gradient-to-r from-purple-950 to-purple-800 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                    Download Resume
+                                </button>
+                            </form>
+                        </div>
+                    </>
                 )}
             </div>
         </nav>

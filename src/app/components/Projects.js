@@ -48,7 +48,7 @@ export default function Projects() {
       projectType: "Website",
     },
     {
-      title: "Caawwd Website",
+      title: "Cawwwd Website",
       description: `A visually engaging e-commerce website for "Odaplace," designed to facilitate online shopping for electronics, specifically highlighting an extensive range of Asus laptops. The interface offers advanced filters and a user-friendly layout, displaying product prices, ratings, and sales data clearly to enhance the shopping experience and decision-making process for consumers.`,
       imageUrl: "/images/projects/Screenshot (401).png",
       liveLink: "",
@@ -155,12 +155,12 @@ export default function Projects() {
 
   return (
     <>
-      <h1 id="projects" className="text-4xl text-purple-200 font-bold text-center mb-12">Featured Projects</h1>
+      <h1 id="projects" className="md:text-4xl text-2xl text-purple-200 font-bold text-center mb-12">Featured Projects</h1>
 
       {/* Buttons for filtering */}
       <div className="flex justify-center mb-8">
         <button
-          className={`mr-4 px-4 w-20 py-2 rounded-lg font-semibold ${activeFilter === 'All' ? 'bg-gradient-to-r from-purple-950 to-purple-800 text-white' : 'bg-purple-200 text-black'
+          className={`mr-4 px-4 md:w-20 w-14 py-2 rounded-lg font-semibold ${activeFilter === 'All' ? 'bg-gradient-to-r from-purple-950 to-purple-800 text-white' : 'bg-purple-200 text-black'
             }`}
           onClick={() => filterProjects('All')}
         >
@@ -182,10 +182,10 @@ export default function Projects() {
         </button>
       </div>
 
-      <div className="mx-auto px-20 grid gap-7 w-full md:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto md:px-20 px-10 grid gap-7 w-full md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <div key={index} className="border-2 border-purple-400 rounded-lg overflow-hidden shadow-md">
-            <Image src={project.imageUrl} alt={project.title} className="w-full h-56 object-cover" height={56} width={100} />
+            <Image src={project.imageUrl} alt={project.title} className="object-cover" height={300} width={400} />
             <div className="p-4">
               <div className='flex justify-between items-center'>
                 <h2 className="text-xl text-purple-200 font-semibold mb-2">{project.title}</h2>

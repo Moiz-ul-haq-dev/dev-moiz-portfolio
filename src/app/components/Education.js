@@ -4,11 +4,11 @@ import { useState } from "react";
 export default function Education() {
     const [faqs, setFaqs] = useState([
         {
-            question: "BS Computer Science",
-            tenure: "2020 - Present",
+            question: "BS (CS)",
+            tenure: "2020 - 2024",
             organization: "University of Engineering and Technology, Lahore",
             answer: (
-                "I am currently studying in BSCS at University of Engineering and Technology Lahore (UET). I am currently in 7th semester."
+                "I have completed my BSCS at University of Engineering and Technology Lahore (UET). I have secured 3.0 CGPA in BSCS. I have completed my BSCS in 2024."
             ),
             visible: false,
         },
@@ -45,12 +45,12 @@ export default function Education() {
         <>
         <div
             id="testimonial"
-            className="container max-w-screen-lg justify-center mx-auto md:px-0 px-10"
+            className="container max-w-screen-lg justify-center mx-auto md:px-0 px-5"
         >
             <div className="row mb-12">
                 <div className="col">
                     <div className="flex flex-col items-center container">
-                        <h1 className="text-4xl text-purple-200 font-bold text-center">My Education</h1>
+                        <h1 className="md:text-4xl text-2xl text-purple-200 font-bold text-center">My Education</h1>
                     </div>
                 </div>
             </div>
@@ -59,9 +59,9 @@ export default function Education() {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className="flex flex-col rounded-lg mb-6 p-3 border border-gray-300 bg-gradient-to-r from-purple-950 to-purple-800"
+                            className="flex flex-col rounded-lg mb-6 md:p-3 p-2 border border-gray-300 bg-gradient-to-r from-purple-950 to-purple-800"
                         >
-                            <div className="text-gray-700 font-normal text-base">
+                            <div className="text-gray-700 font-normal md:text-base text-sm">
                                 <div
                                     className="flex pb-2 cursor-pointer"
                                     onClick={() => toggleAnswer(index)}

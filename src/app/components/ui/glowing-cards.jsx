@@ -18,7 +18,7 @@ export const HoverEffect = ({ items, className }) => {
       {items.map((item, idx) => (
         <div
           key={idx}
-          className="relative group block p-2 h-full md:w-9/12 w-full md:mx-auto"
+          className="relative group block md:p-2 p-1 h-full md:w-9/12 w-full md:mx-auto"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -40,7 +40,7 @@ export const HoverEffect = ({ items, className }) => {
             )}
           </AnimatePresence>
           <Card>
-            <CardDescription>{item.description}</CardDescription>
+            <CardDescription className='text-sm md:text-lg'>{item.description}</CardDescription>
             <div className="flex items-center mt-4">
               <div className="mr-2 items-center">
                 <CardClientImage src={item.clientImage} alt={item.clientName} title={item.title} />

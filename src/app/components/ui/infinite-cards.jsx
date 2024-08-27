@@ -82,9 +82,9 @@ export const InfiniteMovingCards = ({
             key={image.id}
           >
             <blockquote>
-              <div className="flex flex-col relative overflow-hidden items-center h-36 w-32 p-3 md:p-5" tabIndex="-1">
+              <div className="flex flex-col relative overflow-hidden items-center md:h-36 md:w-32 w-20 h-24 p-3 md:p-5" tabIndex="-1">
               {(image.name === 'Firebase' || image.name === 'Flask') ? <Image src={image.image} alt={image.name} className="w-16 h-16 mb-1 md:w-20 md:h-20" height={20} width={20} /> : <Image src={image.image} alt={image.name} className="w-16 h-16 md:w-20 md:h-20" height={20} width={20}/>}
-                <p className="text-center text-xl font-semibold mt-2 text-white">{image.name}</p>
+                <p className="text-center md:text-xl text-md font-semibold mt-2 text-white">{image.name}</p>
               </div>
             </blockquote>
           </li>
